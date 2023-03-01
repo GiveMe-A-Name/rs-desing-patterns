@@ -14,11 +14,11 @@
 //! 例如： 新类型可以用来区分单位，例如，包装f64以获得可区分的Miles和Kms。
 //! # Example
 //! example-1
-//! ```rust
+//! ```ignore
 //!    pub struct Foo(Bar<T1, T2>);    
 //! ```
 //! example-2
-//! ```rust
+//! ```ignore
 //!    pub Miles(i32);
 //!    pub Kms(i32);
 //!    
