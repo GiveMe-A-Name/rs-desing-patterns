@@ -7,14 +7,14 @@
 use std::mem;
 
 #[derive(Debug, PartialEq, Eq)]
-enum MultiVariateEnum {
+pub enum MultiVariateEnum {
     A { name: String },
     B { name: String },
     C,
     D,
 }
 
-fn swizzle(e: &mut MultiVariateEnum) {
+pub fn swizzle(e: &mut MultiVariateEnum) {
     use MultiVariateEnum::*;
 
     *e = match e {

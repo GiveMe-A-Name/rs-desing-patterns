@@ -5,14 +5,14 @@
 //! 它允许在同一数据上写入多种不同的算法，而不必修改数据（或其主要行为）。
 //!
 
-mod ast {
+pub mod ast {
     pub enum Stmt {
         Expr(Expr),
         Let(Name, Expr),
     }
 
     pub struct Name {
-        value: String,
+        pub value: String,
     }
 
     pub enum Expr {
@@ -22,7 +22,7 @@ mod ast {
     }
 }
 
-mod visit {
+pub mod visit {
     use super::ast::*;
     pub trait Visitor {
         type Output: 'static;
