@@ -1,3 +1,4 @@
+pub mod builder_pattern;
 pub mod command_pattern;
 pub mod dyn_object;
 pub mod extension;
